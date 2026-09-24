@@ -4,46 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patrick Romney Madrid | Medical Coding & Billing Student Portfolio</title>
+    
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <!-- Google Fonts: Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            50: '#f0fdfa',
-                            100: '#ccfbf1',
-                            500: '#14b8a6',
-                            600: '#0d9488',
-                            700: '#0f766e',
-                            800: '#115e59',
-                        },
-                        navy: {
-                            800: '#1e293b',
-                            900: '#0f172a',
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        .modal-active {
-            overflow: hidden;
-        }
-    </style>
+    <!-- External Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="font-sans bg-slate-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
 
@@ -336,13 +308,13 @@
                     <div class="bg-white p-4 rounded-xl border border-slate-200 text-center">
                         <i class="fa-solid fa-envelope text-brand-600 text-lg mb-2"></i>
                         <span class="block text-[11px] text-slate-400 uppercase font-semibold">Email</span>
-                        <a href="mailto:student@byupathway.edu" class="text-xs font-bold text-slate-800 hover:text-brand-600">patrickromneybuzz97@gmail.com</a>
+                        <a href="mailto:patrickromneybuzz97@gmail.com" class="text-xs font-bold text-slate-800 hover:text-brand-600 break-all">patrickromneybuzz97@gmail.com</a>
                     </div>
 
                     <div class="bg-white p-4 rounded-xl border border-slate-200 text-center">
                         <i class="fa-brands fa-linkedin text-brand-600 text-lg mb-2"></i>
                         <span class="block text-[11px] text-slate-400 uppercase font-semibold">LinkedIn</span>
-                        <a href="#" class="text-xs font-bold text-slate-800 hover:text-brand-600">https://www.linkedin.com/in/patrick-romney-madrid-0456ba289/</a>
+                        <a href="https://www.linkedin.com/in/patrick-romney-madrid-0456ba289/" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-slate-800 hover:text-brand-600">Profile Link</a>
                     </div>
 
                     <div class="bg-white p-4 rounded-xl border border-slate-200 text-center">
@@ -458,59 +430,7 @@
         </div>
     </div>
 
-    <!-- JavaScript Handler -->
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
-
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        mobileNavLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        });
-
-        function openModal(modalId) {
-            const modal = document.getElementById(modalId);
-            if (modal) {
-                modal.classList.remove('hidden');
-                document.body.classList.add('modal-active');
-            }
-        }
-
-        function closeModal(modalId) {
-            const modal = document.getElementById(modalId);
-            if (modal) {
-                modal.classList.add('hidden');
-                document.body.classList.remove('modal-active');
-            }
-        }
-
-        window.onclick = function(event) {
-            const modals = ['modal-1', 'modal-2', 'modal-3', 'modal-4'];
-            modals.forEach(id => {
-                const modal = document.getElementById(id);
-                if (event.target === modal) {
-                    closeModal(id);
-                }
-            });
-        };
-
-        function handleFormSubmit(event) {
-            event.preventDefault();
-            const notification = document.getElementById('formNotification');
-            notification.classList.remove('hidden');
-            document.getElementById('contactForm').reset();
-            setTimeout(() => {
-                notification.classList.add('hidden');
-            }, 5000);
-        }
-    </script>
+    <!-- External Custom JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
