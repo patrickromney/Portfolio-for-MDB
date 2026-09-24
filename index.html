@@ -3,434 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patrick Romney Madrid | Medical Coding & Billing Student Portfolio</title>
-    
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- FontAwesome Icons -->
+    <title>Patrick Romney Madrid - Medical Coding Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Social Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Google Fonts: Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- External Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="font-sans bg-slate-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
+<body>
 
     <!-- Navigation Header -->
-    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <a href="#home" class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-brand-600 text-white flex items-center justify-center shadow-md shadow-brand-600/20">
-                    <i class="fa-solid fa-graduation-cap text-lg"></i>
-                </div>
-                <div>
-                    <span class="font-bold text-slate-900 text-lg leading-tight block">Patrick Romney Madrid</span>
-                    <span class="text-xs text-brand-600 font-semibold tracking-wide uppercase">Ensign College Student</span>
-                </div>
-            </a>
-
-            <!-- Desktop Navigation -->
-            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
-                <a href="#home" class="hover:text-brand-600 transition-colors py-1">Home</a>
-                <a href="#highlights" class="hover:text-brand-600 transition-colors py-1">Highlights</a>
-                <a href="#coursework" class="hover:text-brand-600 transition-colors py-1">Coursework & Skills</a>
-                <a href="#about" class="hover:text-brand-600 transition-colors py-1">Education</a>
-                <a href="#contact" class="hover:text-brand-600 transition-colors py-1">Contact</a>
-            </nav>
-
-            <!-- Mobile Menu Button -->
-            <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 focus:outline-none">
-                <i class="fa-solid fa-bars text-xl"></i>
-            </button>
-        </div>
-
-        <!-- Mobile Navigation Drawer -->
-        <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-2">
-            <a href="#home" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-600">Home</a>
-            <a href="#highlights" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-600">Highlights</a>
-            <a href="#coursework" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-600">Coursework & Skills</a>
-            <a href="#about" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-600">Education</a>
-            <a href="#contact" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-600">Contact</a>
-        </div>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Patrick Madrid</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills & Focus</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="relative bg-gradient-to-br from-brand-50/70 via-white to-slate-50 py-16 md:py-24 border-b border-slate-200/80">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                
-                <!-- Left Hero Text -->
-                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-100/80 border border-brand-200 text-brand-800 text-xs font-bold tracking-wide">
-                        <i class="fa-solid fa-book-open text-brand-600"></i>
-                        Ensign College Student • BYU-Pathway Worldwide
-                    </div>
-                    
-                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-navy-900 tracking-tight leading-tight">
-                        ASPIRING MEDICAL BILLING & <span class="text-brand-600">CODING SPECIALIST.</span>
-                    </h1>
-                    
-                    <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
-                        Dedicated student preparing for a career in Health Information Management. Currently mastering ICD-10-CM, CPT guidelines, medical terminology, and healthcare revenue cycle fundamentals.
-                    </p>
-                    
-                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
-                        <a href="#coursework" class="w-full sm:w-auto px-7 py-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-semibold text-sm shadow-md shadow-brand-600/20 transition-all text-center">
-                            View My Studies
-                        </a>
-                        <a href="#about" class="w-full sm:w-auto px-7 py-3 rounded-xl bg-white border border-slate-300 hover:border-brand-600 text-slate-700 hover:text-brand-600 font-semibold text-sm transition-all text-center">
-                            Academic Background
-                        </a>
-                    </div>
-
-                    <!-- Certification Goal Badge -->
-                    <div class="pt-4 flex items-center justify-center lg:justify-start gap-2 text-xs font-medium text-slate-500">
-                        <i class="fa-solid fa-bullseye text-brand-600"></i>
-                        <span>Goal: AAPC Certified Professional Coder (CPC) Exam Preparation</span>
-                    </div>
-                </div>
-
-                <!-- Right Hero Image -->
-                <div class="lg:col-span-5 flex justify-center">
-                    <div class="relative w-full max-w-sm rounded-2xl overflow-hidden shadow-xl border-4 border-white bg-slate-200">
-                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80" 
-                             alt="Medical Coding Study Setup" 
-                             class="w-full h-[380px] object-cover"
-                             onerror="this.src='https://placehold.co/600x800/0d9488/ffffff?text=Medical+Coding+Student'">
-                    </div>
-                </div>
-
-            </div>
+    <!-- Hero / Profile Section -->
+    <section id="hero">
+        <div class="hero-container">
+            <img src="DSC_0772.jpg" alt="Patrick Romney Madrid Profile Picture" id="profile-img">
+            <h1>Patrick Romney Madrid</h1>
+            <p class="tagline">Aspiring Medical Coding & Billing Specialist</p>
+            <p class="sub-tagline">Student at Ensign College (BYU-Pathway Worldwide)</p>
+            <a href="#contact" class="btn">Get in Touch</a>
         </div>
     </section>
 
-    <!-- Key Highlights / Status Section -->
-    <section id="highlights" class="py-12 bg-white border-b border-slate-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                
-                <!-- Card 1 -->
-                <div class="p-5 rounded-xl bg-brand-50/60 border border-brand-100 text-center sm:text-left">
-                    <div class="w-10 h-10 rounded-lg bg-brand-600/10 text-brand-600 flex items-center justify-center mx-auto sm:mx-0 mb-3 text-lg">
-                        <i class="fa-solid fa-check-circle"></i>
-                    </div>
-                    <span class="text-xs font-bold text-brand-700 uppercase tracking-wider block mb-1">Status: Complete</span>
-                    <h3 class="font-bold text-navy-900 text-sm">Medical Billing & Coding Fundamentals</h3>
-                    <p class="text-xs text-slate-500 mt-1">Foundational rules, claim cycles & reimbursement basics.</p>
-                </div>
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            Welcome to my professional portfolio! I am an entry-level Medical Coding and Billing student actively building a strong foundation in healthcare classification systems, medical terminology, and reimbursement processes. I am dedicated to precision, data accuracy, and HIPAA compliance in healthcare administration.
+        </p>
+    </section>
 
-                <!-- Card 2 -->
-                <div class="p-5 rounded-xl bg-brand-50/60 border border-brand-100 text-center sm:text-left">
-                    <div class="w-10 h-10 rounded-lg bg-brand-600/10 text-brand-600 flex items-center justify-center mx-auto sm:mx-0 mb-3 text-lg">
-                        <i class="fa-solid fa-spinner animate-spin"></i>
-                    </div>
-                    <span class="text-xs font-bold text-brand-700 uppercase tracking-wider block mb-1">Currently Studying</span>
-                    <h3 class="font-bold text-navy-900 text-sm">Body Systems 1 & 2</h3>
-                    <p class="text-xs text-slate-500 mt-1">Anatomy, medical terminology & system coding applications.</p>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="p-5 rounded-xl bg-brand-50/60 border border-brand-100 text-center sm:text-left">
-                    <div class="w-10 h-10 rounded-lg bg-brand-600/10 text-brand-600 flex items-center justify-center mx-auto sm:mx-0 mb-3 text-lg">
-                        <i class="fa-solid fa-university"></i>
-                    </div>
-                    <span class="text-xs font-bold text-brand-700 uppercase tracking-wider block mb-1">Education</span>
-                    <h3 class="font-bold text-navy-900 text-sm">Ensign College</h3>
-                    <p class="text-xs text-slate-500 mt-1">Studying through BYU-Pathway Worldwide online program.</p>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="p-5 rounded-xl bg-brand-50/60 border border-brand-100 text-center sm:text-left">
-                    <div class="w-10 h-10 rounded-lg bg-brand-600/10 text-brand-600 flex items-center justify-center mx-auto sm:mx-0 mb-3 text-lg">
-                        <i class="fa-solid fa-certificate"></i>
-                    </div>
-                    <span class="text-xs font-bold text-brand-700 uppercase tracking-wider block mb-1">Goal / Upcoming</span>
-                    <h3 class="font-bold text-navy-900 text-sm">AAPC CPC Certification</h3>
-                    <p class="text-xs text-slate-500 mt-1">Preparing for national credential examination post-graduation.</p>
-                </div>
-
-            </div>
+    <!-- Education & Status -->
+    <section id="education" class="section bg-light">
+        <h2>Education & Current Progress</h2>
+        <div class="card">
+            <h3>Ensign College / BYU-Pathway Worldwide</h3>
+            <p class="degree">Medical Coding & Billing Program</p>
+            <ul class="course-list">
+                <li><i class="fa-solid fa-circle-check completed"></i> <strong>Fundamentals of Medical Coding & Billing</strong> — Completed</li>
+                <li><i class="fa-solid fa-spinner in-progress"></i> <strong>Body Systems 1</strong> — In Progress</li>
+                <li><i class="fa-solid fa-spinner in-progress"></i> <strong>Body Systems 2</strong> — In Progress</li>
+            </ul>
         </div>
     </section>
 
-    <!-- Coursework & Skills Section -->
-    <section id="coursework" class="py-16 bg-slate-50 border-b border-slate-200/60">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <h2 class="text-xs uppercase tracking-widest font-bold text-brand-600 mb-2">Academic Modules</h2>
-                <h3 class="text-2xl sm:text-3xl font-bold text-navy-900">Coursework & Learning Progress</h3>
-                <p class="text-slate-600 mt-2 text-xs sm:text-sm">Summary of core subjects and practical coding applications covered in my curriculum.</p>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>Core Competencies</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fa-solid fa-book-medical"></i>
+                <h3>Coding Knowledge</h3>
+                <p>Fundamental understanding of ICD-10-CM, CPT, and HCPCS Level II coding guidelines.</p>
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                
-                <!-- Course Card 1 -->
-                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col justify-between hover:shadow-md transition-shadow">
-                    <div>
-                        <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-5 text-xl font-bold">
-                            <i class="fa-solid fa-file-medical"></i>
-                        </div>
-                        <span class="px-2.5 py-1 bg-emerald-100 text-emerald-800 rounded-md text-[11px] font-bold uppercase tracking-wider">Completed</span>
-                        <h4 class="text-base font-bold text-navy-900 mt-3 mb-2">Medical Billing Fundamentals</h4>
-                        <p class="text-slate-600 text-xs leading-relaxed mb-4">
-                            Introduction to healthcare revenue cycle, CMS-1500 and UB-04 claim forms, insurance types (Medicare, Medicaid, Commercial), and patient eligibility rules.
-                        </p>
-                    </div>
-                    <button onclick="openModal('modal-1')" class="w-full py-2 px-3 rounded-lg bg-slate-100 hover:bg-brand-600 hover:text-white text-slate-700 font-semibold text-xs transition-colors text-center">
-                        View Details
-                    </button>
-                </div>
-
-                <!-- Course Card 2 -->
-                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col justify-between hover:shadow-md transition-shadow">
-                    <div>
-                        <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-5 text-xl font-bold">
-                            <i class="fa-solid fa-book-medical"></i>
-                        </div>
-                        <span class="px-2.5 py-1 bg-emerald-100 text-emerald-800 rounded-md text-[11px] font-bold uppercase tracking-wider">Completed</span>
-                        <h4 class="text-base font-bold text-navy-900 mt-3 mb-2">ICD-10-CM & CPT Basics</h4>
-                        <p class="text-slate-600 text-xs leading-relaxed mb-4">
-                            Foundational manual navigation, coding guidelines, Alphabetic Index vs Tabular List lookup, CPT code structure, and basic modifier applications.
-                        </p>
-                    </div>
-                    <button onclick="openModal('modal-2')" class="w-full py-2 px-3 rounded-lg bg-slate-100 hover:bg-brand-600 hover:text-white text-slate-700 font-semibold text-xs transition-colors text-center">
-                        View Details
-                    </button>
-                </div>
-
-                <!-- Course Card 3 -->
-                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col justify-between hover:shadow-md transition-shadow">
-                    <div>
-                        <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-5 text-xl font-bold">
-                            <i class="fa-solid fa-heart-pulse"></i>
-                        </div>
-                        <span class="px-2.5 py-1 bg-amber-100 text-amber-800 rounded-md text-[11px] font-bold uppercase tracking-wider">In Progress</span>
-                        <h4 class="text-base font-bold text-navy-900 mt-3 mb-2">Body Systems 1 & 2</h4>
-                        <p class="text-slate-600 text-xs leading-relaxed mb-4">
-                            In-depth studying of Integumentary, Musculoskeletal, Cardiovascular, Respiratory, and Digestive systems with corresponding CPT and ICD-10 assignment.
-                        </p>
-                    </div>
-                    <button onclick="openModal('modal-3')" class="w-full py-2 px-3 rounded-lg bg-slate-100 hover:bg-brand-600 hover:text-white text-slate-700 font-semibold text-xs transition-colors text-center">
-                        View Details
-                    </button>
-                </div>
-
-                <!-- Course Card 4 -->
-                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col justify-between hover:shadow-md transition-shadow">
-                    <div>
-                        <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-5 text-xl font-bold">
-                            <i class="fa-solid fa-dna"></i>
-                        </div>
-                        <span class="px-2.5 py-1 bg-emerald-100 text-emerald-800 rounded-md text-[11px] font-bold uppercase tracking-wider">Completed</span>
-                        <h4 class="text-base font-bold text-navy-900 mt-3 mb-2">Medical Terminology & Anatomy</h4>
-                        <p class="text-slate-600 text-xs leading-relaxed mb-4">
-                            Root words, prefixes, suffixes, anatomical positions, disease processes, and clinical documentation interpretation for medical coders.
-                        </p>
-                    </div>
-                    <button onclick="openModal('modal-4')" class="w-full py-2 px-3 rounded-lg bg-slate-100 hover:bg-brand-600 hover:text-white text-slate-700 font-semibold text-xs transition-colors text-center">
-                        View Details
-                    </button>
-                </div>
-
+            <div class="skill-card">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <h3>Anatomy & Physiology</h3>
+                <p>Currently expanding knowledge in human body systems and medical terminology.</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="about" class="py-16 bg-white border-b border-slate-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-                
-                <!-- Profile Summary -->
-                <div class="lg:col-span-5 flex justify-center">
-                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 w-full max-w-sm text-center">
-                        <div class="w-20 h-20 rounded-full bg-brand-600 text-white text-2xl font-bold flex items-center justify-center mx-auto mb-4">
-                            PRM
-                        </div>
-                        <h3 class="text-lg font-bold text-navy-900">Patrick Romney Madrid</h3>
-                        <p class="text-xs text-brand-600 font-semibold uppercase mb-3">Medical Billing & Coding Student</p>
-                        <div class="border-t border-slate-200 pt-3 text-xs text-slate-600 space-y-2">
-                            <p><i class="fa-solid fa-building-columns text-slate-400 mr-2"></i>Ensign College</p>
-                            <p><i class="fa-solid fa-globe text-slate-400 mr-2"></i>BYU-Pathway Worldwide</p>
-                            <p><i class="fa-solid fa-location-dot text-slate-400 mr-2"></i>Online Student</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Academic Details -->
-                <div class="lg:col-span-7 space-y-6">
-                    <div>
-                        <h2 class="text-xs uppercase tracking-widest font-bold text-brand-600 mb-1">Education Journey</h2>
-                        <h3 class="text-2xl font-bold text-navy-900">About My Studies</h3>
-                    </div>
-
-                    <p class="text-slate-600 leading-relaxed text-xs sm:text-sm">
-                        I am currently pursuing my Medical Billing and Coding Certificate at Ensign College through the BYU-Pathway Worldwide program. My coursework is focused on developing precise coding habits, mastering medical vocabulary, and gaining a comprehensive understanding of healthcare billing standards.
-                    </p>
-
-                    <div class="space-y-3">
-                        <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 flex items-start gap-3">
-                            <i class="fa-solid fa-check text-brand-600 mt-1 text-sm"></i>
-                            <div>
-                                <h4 class="text-xs font-bold text-navy-900">Fundamentals Mastered</h4>
-                                <p class="text-[11px] text-slate-500">Successfully completed introductory medical billing, basic ICD-10-CM and CPT coding logic, and healthcare privacy guidelines (HIPAA basics).</p>
-                            </div>
-                        </div>
-
-                        <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 flex items-start gap-3">
-                            <i class="fa-solid fa-spinner text-brand-600 mt-1 text-sm"></i>
-                            <div>
-                                <h4 class="text-xs font-bold text-navy-900">Body Systems 1 & 2 (Active Learning)</h4>
-                                <p class="text-[11px] text-slate-500">Currently expanding knowledge across organ systems, anatomical pathology, and applying system-specific coding guidelines.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="skill-card">
+                <i class="fa-solid fa-file-invoice-dollar"></i>
+                <h3>Medical Billing</h3>
+                <p>Understanding claim generation, reimbursement methodologies, and healthcare regulations.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-user-shield"></i>
+                <h3>Compliance & Accuracy</h3>
+                <p>Committed to maintaining patient privacy, HIPAA compliance, and precision in data entry.</p>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-slate-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl mx-auto">
-                <div class="text-center mb-10">
-                    <h2 class="text-xs uppercase tracking-widest font-bold text-brand-600 mb-1">Connect With Me</h2>
-                    <h3 class="text-2xl font-bold text-navy-900">Contact Information</h3>
-                    <p class="text-xs text-slate-500 mt-1">Open to student internships, mentorship, and entry-level career discussions.</p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-                    <div class="bg-white p-4 rounded-xl border border-slate-200 text-center">
-                        <i class="fa-solid fa-envelope text-brand-600 text-lg mb-2"></i>
-                        <span class="block text-[11px] text-slate-400 uppercase font-semibold">Email</span>
-                        <a href="mailto:patrickromneybuzz97@gmail.com" class="text-xs font-bold text-slate-800 hover:text-brand-600 break-all">patrickromneybuzz97@gmail.com</a>
-                    </div>
-
-                    <div class="bg-white p-4 rounded-xl border border-slate-200 text-center">
-                        <i class="fa-brands fa-linkedin text-brand-600 text-lg mb-2"></i>
-                        <span class="block text-[11px] text-slate-400 uppercase font-semibold">LinkedIn</span>
-                        <a href="https://www.linkedin.com/in/patrick-romney-madrid-0456ba289/" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-slate-800 hover:text-brand-600">Profile Link</a>
-                    </div>
-
-                    <div class="bg-white p-4 rounded-xl border border-slate-200 text-center">
-                        <i class="fa-solid fa-graduation-cap text-brand-600 text-lg mb-2"></i>
-                        <span class="block text-[11px] text-slate-400 uppercase font-semibold">Institution</span>
-                        <span class="text-xs font-bold text-slate-800">Ensign College</span>
-                    </div>
-                </div>
-
-                <!-- Simple Contact Form -->
-                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-                    <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <div>
-                                <label class="block text-[11px] font-bold text-slate-700 uppercase mb-1">Your Name</label>
-                                <input type="text" required class="w-full px-3.5 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-600 focus:outline-none text-xs" placeholder="Full Name">
-                            </div>
-                            <div>
-                                <label class="block text-[11px] font-bold text-slate-700 uppercase mb-1">Email Address</label>
-                                <input type="email" required class="w-full px-3.5 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-600 focus:outline-none text-xs" placeholder="email@example.com">
-                            </div>
-                        </div>
-
-                        <div>
-                            <label class="block text-[11px] font-bold text-slate-700 uppercase mb-1">Message</label>
-                            <textarea rows="3" required class="w-full px-3.5 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-600 focus:outline-none text-xs" placeholder="Write a brief message..."></textarea>
-                        </div>
-
-                        <button type="submit" class="w-full py-2.5 bg-brand-600 hover:bg-brand-700 text-white font-semibold rounded-xl text-xs transition-colors">
-                            Send Message
-                        </button>
-
-                        <div id="formNotification" class="hidden text-center text-xs font-medium text-emerald-700 bg-emerald-50 py-2 rounded-lg border border-emerald-200 mt-2">
-                            Thank you! Your message has been sent.
-                        </div>
-                    </form>
-                </div>
-
-            </div>
+    <section id="contact" class="section bg-light">
+        <h2>Connect With Me</h2>
+        <p>I am open to internship opportunities, entry-level positions, and professional networking.</p>
+        
+        <div class="contact-links">
+            <a href="mailto:patrickromneybuzz97@gmail.com" class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>patrickromneybuzz97@gmail.com</span>
+            </a>
+            <a href="https://www.linkedin.com/in/patrick-romney-madrid-0456ba289/" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>LinkedIn Profile</span>
+            </a>
+            <a href="https://www.facebook.com/patrickromney.madridii" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <i class="fa-brands fa-square-facebook"></i>
+                <span>Facebook Profile</span>
+            </a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-navy-900 text-slate-400 py-8 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs space-y-2">
-            <p>&copy; <span id="year"></span> Patrick Romney Madrid. Student Portfolio | Ensign College via BYU-Pathway Worldwide.</p>
-            <p class="text-slate-500 text-[11px]">Academic Student Website for Medical Billing & Coding Studies.</p>
-        </div>
+    <footer>
+        <p>&copy; <span id="year"></span> Patrick Romney Madrid. All rights reserved.</p>
     </footer>
 
-    <!-- Coursework Detail Modals -->
-    <div id="modal-1" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-        <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-xl relative">
-            <button onclick="closeModal('modal-1')" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-            <h3 class="text-base font-bold text-navy-900 mb-1">Medical Billing Fundamentals</h3>
-            <p class="text-xs text-brand-600 font-medium mb-3">Completed Module Summary</p>
-            <ul class="text-xs text-slate-600 space-y-2 mb-5 list-disc pl-4">
-                <li>Understood revenue cycle management phases from registration to claim resolution.</li>
-                <li>Learned CMS-1500 outpatient claim form fields and UB-04 basics.</li>
-                <li>Studied primary, secondary, Medicare, Medicaid, and commercial insurance coverage rules.</li>
-            </ul>
-            <button onclick="closeModal('modal-1')" class="w-full py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold rounded-lg text-xs">Close</button>
-        </div>
-    </div>
-
-    <div id="modal-2" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-        <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-xl relative">
-            <button onclick="closeModal('modal-2')" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-            <h3 class="text-base font-bold text-navy-900 mb-1">ICD-10-CM & CPT Basics</h3>
-            <p class="text-xs text-brand-600 font-medium mb-3">Completed Module Summary</p>
-            <ul class="text-xs text-slate-600 space-y-2 mb-5 list-disc pl-4">
-                <li>Practiced manual codebook lookup using official conventions and guidelines.</li>
-                <li>Assigned primary and secondary ICD-10 diagnosis codes for standard encounters.</li>
-                <li>Reviewed evaluation and management (E/M) service concepts and common CPT modifiers.</li>
-            </ul>
-            <button onclick="closeModal('modal-2')" class="w-full py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold rounded-lg text-xs">Close</button>
-        </div>
-    </div>
-
-    <div id="modal-3" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-        <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-xl relative">
-            <button onclick="closeModal('modal-3')" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-            <h3 class="text-base font-bold text-navy-900 mb-1">Body Systems 1 & 2</h3>
-            <p class="text-xs text-amber-600 font-medium mb-3">In-Progress Module Focus</p>
-            <ul class="text-xs text-slate-600 space-y-2 mb-5 list-disc pl-4">
-                <li>Integumentary & Musculoskeletal: Lesion excision, repair, fractures, and joint coding.</li>
-                <li>Cardiovascular & Respiratory: Diagnostic procedures, hypertension, and pulmonary system codes.</li>
-                <li>Digestive System: Endoscopy coding, gastroenterology procedures, and diagnostic crosswalks.</li>
-            </ul>
-            <button onclick="closeModal('modal-3')" class="w-full py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold rounded-lg text-xs">Close</button>
-        </div>
-    </div>
-
-    <div id="modal-4" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-        <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-xl relative">
-            <button onclick="closeModal('modal-4')" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-            <h3 class="text-base font-bold text-navy-900 mb-1">Medical Terminology & Anatomy</h3>
-            <p class="text-xs text-brand-600 font-medium mb-3">Completed Module Summary</p>
-            <ul class="text-xs text-slate-600 space-y-2 mb-5 list-disc pl-4">
-                <li>Mastered medical prefixes, suffixes, root words, and combined forms.</li>
-                <li>Studied human anatomy, body planes, directional terms, and organ functions.</li>
-                <li>Interpreted clinical chart documentation for accurate diagnosis identification.</li>
-            </ul>
-            <button onclick="closeModal('modal-4')" class="w-full py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold rounded-lg text-xs">Close</button>
-        </div>
-    </div>
-
-    <!-- External Custom JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
